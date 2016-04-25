@@ -1,0 +1,1 @@
+<? if($msg) :?>	<b style="color: red;"><?=$msg?></b><? endif ?>	<ul>		<li>			<b><a href="articles/new">Новая статья</a></b>		</li>			<? foreach ($articles as $article): ?>			<li>				<a href="articles/edit/<?=$article['id_article']?>">					<?=$article['title']?>				</a>			</li>		<? endforeach ?>	</ul>
